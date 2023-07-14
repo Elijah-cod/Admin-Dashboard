@@ -3,5 +3,33 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    background-color: aquamarine;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas:
+    'sidebar menu menu'
+    'sidebar menu menu'
+    'sidebar body body';
+    grid-template-rows: auto auto 5fr;
+    grid-template-columns: 2fr 4fr 4fr;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: steelblue;
+    padding: 120px;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: pink;
+    padding: 70px;
+}
+
+.body {
+    grid-area: body;
+    background-color: black;
 }
