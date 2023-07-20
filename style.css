@@ -17,7 +17,7 @@
     'sidebar menu'
     'sidebar menu'
     'sidebar body';
-    grid-template-rows: auto 1fr 5fr;
+    grid-template-rows: 1fr auto 5fr;
     grid-template-columns: 2fr 5fr;
 }
 
@@ -214,4 +214,42 @@
     box-shadow: 0px 4px 20px -6px rgba(0,0,0,1) inset;
     -webkit-box-shadow: 0px 4px 20px -6px #b8b8b8, inset;
     -moz-box-shadow: 0px 4px 20px -6px #ffffff inset;
+    display: flex;
+}
+
+.left-body {
+    width: 70%;
+    display: grid;
+    grid-template-rows: auto 5fr;
+    margin: 10px;
+}
+
+.right-body {
+    width: 30%;
+    border: 2px solid yellow;
+    margin: 10px;
+}
+
+.left-body-nav {
+    padding: 10px;
+}
+.left-body-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    font-size: small;
+}
+
+.project-images img{
+    height: 20px;
+    width: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.projects {
+    background-color: #f0f0f0; /* Optional: Add a background color */
+    border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+    padding: 10px; /* Optional: Add padding to the boxes */
+    min-height: 100px; /* Optional: Set a minimum height for the boxes */
 }
