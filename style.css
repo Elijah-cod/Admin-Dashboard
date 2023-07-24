@@ -72,6 +72,7 @@
 .menu {
     grid-area: menu;
     display: grid;
+    height: 120px;
     grid-template-rows:  1fr 1fr;
 }
 
@@ -224,12 +225,6 @@
     margin: 10px;
 }
 
-.right-body {
-    width: 30%;
-    border: 2px solid yellow;
-    margin: 10px;
-}
-
 .left-body-nav {
     padding: 10px;
 }
@@ -250,6 +245,65 @@
 .projects {
     background-color: #f0f0f0; /* Optional: Add a background color */
     border: 1px solid #ccc; /* Optional: Add a border for better visualization */
-    padding: 10px; /* Optional: Add padding to the boxes */
-    min-height: 100px; /* Optional: Set a minimum height for the boxes */
+    padding: 20px; /* Optional: Add padding to the boxes */
+    border-radius: 10px;
+}
+
+.projects h3 {
+    margin-bottom: 10px;
+}
+
+.right-body {
+    width: 30%;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+.right-upper-body-nav,
+.right-lower-body-nav {
+    padding: 10px;
+}
+
+.right-upper-body-content {
+    font-size: x-small;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.announcement-1,
+.announcement-2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.announcement-3 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.trending img {
+    height: 40px;
+    width: 40px;
+}
+
+
+.right-lower-body-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: small;
+}
+
+.trending {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
